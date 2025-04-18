@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yol-tarifi-btn {
+  width: 150px; /* Sabit genişlik */
+  height: 50px; /* Sabit yükseklik */
+  font-size: 16px; /* Tutarlı yazı boyutu */
+  padding: 10px; /* Tutarlı iç boşluk */
+  box-sizing: border-box; /* Her şey dahil */
+  background-color: #4299e1; /* Mavi arka plan */
+  color: white; /* Beyaz yazı */
+  font-weight: bold; /* Kalın yazı */
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  border: none; /* Çerçeve yok */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+}
+
+.yol-tarifi-btn:hover {
+  background-color: #2b6cb0; /* Daha koyu mavi arka plan */
+}
+
+.yol-tarifi-btn:focus {
+  outline: none; /* Varsayılan odak çerçevesini kaldır */
+  box-shadow: 0 0 10px rgba(66, 153, 225, 0.6); /* Odaklanıldığında gölge efekti */
+}
+
+@media (max-width: 768px) {
+  .yol-tarifi-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .yol-tarifi-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
