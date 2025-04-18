@@ -320,6 +320,8 @@ import React, { useState, useEffect } from 'react';
            ))}
          </div>
        )}
+
+      <button className="btn btn-primary">Daisy UI Buton</button>
      </div>
    );
  }
